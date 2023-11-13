@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(white, wheat);
+    height: 90vmin;
+    width: 90vmin;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+#name{
+    font-family: 'Shadows Into Light', cursive;
+    color:wheat;
+    position: absolute;
+    top: 20px;
+    right: 1100px;
+    font-size: xx-large;
+    font-weight: bold;  
+}
+#scoreBox{
+    font-family: 'Shadows Into Light', cursive;
+    color:wheat;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.head{
+    background-color: salmon;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.snake{
+    /* background-color: maroon; */
+    border: 5px solid wheat;
+    border-radius: 5px;
+}
+.food{
+    background-color: chocolate;
+    border: 4px solid maroon;
+    border-radius: 20px;
+}
